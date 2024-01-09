@@ -5,7 +5,7 @@ simple BaseStation {
         double unitBenefit;
         double computationCapability;
         int duration;
-        string typeProbability[];
+        string typeProbability;
         int totalVehicles;
         double deltaMin;
         double deltaMax;

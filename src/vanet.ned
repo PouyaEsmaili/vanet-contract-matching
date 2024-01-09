@@ -10,7 +10,7 @@ network Vanet {
         for i=0..numVehicles-1 {
             baseStation.vehicles++ <--> vehicles[i].baseStation;
         }
-        for i=0..numVehicles-1, for j=0..numVehicles-1 {
-			vehicles[i].vehicles++ <--> vehicles[j].vehicles++;
-        } 
+        for i=0..numVehicles-1, for j=i+1..numVehicles-1 {
+            vehicles[i].vehicles++ <--> vehicles[j].vehicles++;
+        }
 }

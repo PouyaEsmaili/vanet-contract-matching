@@ -1,0 +1,2 @@
+INCLUDE_PATH += -I/opt/homebrew/include
+LDFLAGS += -lcurl
